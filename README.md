@@ -157,7 +157,7 @@ Summary of available options for evaluating models:
 
 We provide sample results for our code. Following are the performances of the Early-Bird Tickets drawn using different pruning methods (OrthoReg, Fisher pruning, and BN-scale based pruning) on VGG-13, MobileNet-V1, and ResNet-34 models for the CIFAR-100 dataset:
 
-To replicate these, use: ```./run_ebt.sh ```
+To replicate these, use seed 0.
 
 * Original models:
 
