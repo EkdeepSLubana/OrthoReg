@@ -1,5 +1,7 @@
 # OrthoReg: Robust Network Pruning Using Orthogonality Regularization
+Code for OrthoReg: https://arxiv.org/abs/2009.05014
 
+## Abstract
 OrthoReg is a regularization strategy aimed at making importance estimates in prior state-of-the-art pruning methods based on loss preservation (e.g., https://arxiv.org/pdf/1801.05787.pdf) more reliable and robust for large pruning ratios. We provide code for extracting **Early-Bird Tickets** from and for **Iteratively Pruning** VGG-13, MobileNet-V1, and ResNet-34.
 
 <img src="image/OrthoReg.png" height="150">
