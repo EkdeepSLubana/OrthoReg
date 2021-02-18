@@ -575,9 +575,9 @@ if(args.model == 'vgg'):
 		best_acc = 0
 		if(args.pruning_type=='orthoreg' or args.only_train=='ortho'):
 			### Train Ortho Network ###
-			if(args.ebt=='False'):
-				net_dict = torch.load(pretrained_root+'vgg.pth')
-				net.load_state_dict(net_dict['net'])
+			#if(args.ebt=='False'):
+				#net_dict = torch.load(pretrained_root+'vgg.pth')
+				#net.load_state_dict(net_dict['net'])
 			lr_ind = 0
 			epoch = 0
 			optimizer = optim.SGD(net.parameters(), lr=ortho_sched[lr_ind], momentum=0.9, weight_decay=0)
@@ -635,9 +635,9 @@ elif(args.model == 'mobilenet'):
 		best_acc = 0
 		if(args.pruning_type=='orthoreg' or args.only_train=='ortho'):
 			### Train Ortho Network ###
-			if(args.ebt=='False'):
-				net_dict = torch.load(pretrained_root+'mobilenet.pth')
-				net.load_state_dict(net_dict['net'])
+			#if(args.ebt=='False'):
+				#net_dict = torch.load(pretrained_root+'mobilenet.pth')
+				#net.load_state_dict(net_dict['net'])
 			lr_ind = 0
 			epoch = 0
 			optimizer = optim.SGD(net.parameters(), lr=ortho_sched[lr_ind], momentum=0.9, weight_decay=0)
@@ -695,9 +695,9 @@ elif(args.model == 'resnet'):
 
 		### Train with Ortho regularizer ###
 		if(args.pruning_type=='orthoreg' or args.only_train=='ortho'):
-			if(args.ebt=='False'):
-				net_dict = torch.load(pretrained_root+'resnet.pth')
-				net.load_state_dict(net_dict['net'])
+			#if(args.ebt=='False'):
+				#net_dict = torch.load(pretrained_root+'resnet.pth')
+				#net.load_state_dict(net_dict['net'])
 			lr_ind = 0
 			epoch = 0
 			optimizer = optim.SGD(net.parameters(), lr=ortho_sched[lr_ind], momentum=0.9, weight_decay=0)
@@ -756,9 +756,9 @@ elif(args.model == 'resnet-56'):
 
 		### Train with Ortho regularizer ###
 		if(args.pruning_type=='orthoreg' or args.only_train=='ortho'):
-			if(args.ebt=='False'):
-				net_dict = torch.load(pretrained_root+'resnet-56.pth')
-				net.load_state_dict(net_dict['net'])
+			#if(args.ebt=='False'):
+				#net_dict = torch.load(pretrained_root+'resnet-56.pth')
+				#net.load_state_dict(net_dict['net'])
 			lr_ind = 0
 			epoch = 0
 			optimizer = optim.SGD(net.parameters(), lr=ortho_sched[lr_ind], momentum=0.9, weight_decay=0)
